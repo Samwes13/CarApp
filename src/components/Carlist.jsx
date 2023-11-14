@@ -11,7 +11,7 @@ function Carlist() {
   const [msg, setMsg] = useState('');
 
   useEffect(() => {
-    fetch('http://carrestapi.herokuapp.com/cars')
+    fetch('https://carrestapi.herokuapp.com/cars')
       .then((response) => response.json())
       .then((data) => {
         const carsData = data._embedded.cars; 
